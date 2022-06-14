@@ -1,11 +1,11 @@
 services:
   air:
     image: cosmtrek/air:v1.40.2
-    working_dir: /goapi/
+    working_dir: /air/
     ports:
       - 3000:3000
     volumes:
-      - ./:/goapi/
+      - ./:/air/
   db:
       image: "mcr.microsoft.com/mssql/server:2019-CU16-ubuntu-20.04"
       environment:
